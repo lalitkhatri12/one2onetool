@@ -6,4 +6,4 @@ RUN npm test
 COPY . /one2onetool
 CMD node index.js
 EXPOSE 3000
-ENTRYPOINT "node" "index.js"
+ENTRYPOINT "nohup node index.js &"
