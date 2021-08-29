@@ -5,4 +5,4 @@ RUN npm install
 RUN npm test
 COPY . /one2onetool
 EXPOSE 3000
-CMD [ "node", "server.js" ]
+CMD [ "node", "index.js" ]
