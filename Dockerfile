@@ -4,5 +4,5 @@ COPY package.json /one2onetool
 RUN npm install
 RUN npm test
 COPY . /one2onetool
-CMD node index.js
 EXPOSE 3000
+CMD [ "node", "index.js" ]
