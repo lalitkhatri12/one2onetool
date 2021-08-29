@@ -1,7 +1,8 @@
 FROM node:12
-WORKDIR /app
-COPY package.json /app
+WORKDIR /one2onetool
+COPY package.json /one2onetool
 RUN npm install
-COPY . /app
+RUN npm jest
+COPY . /one2onetool
 CMD node index.js
 EXPOSE 3000
